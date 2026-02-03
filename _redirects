@@ -1,0 +1,3 @@
+# Redirect apex to www (change plumberdemopage.com to your domain if you want www)
+# Example: Uncomment and replace plumberdemopage.com with your real domain if needed
+# https://plumberdemopage.com/* https://www.plumberdemopage.com/:splat 301!

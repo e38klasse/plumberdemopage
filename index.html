@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emergency Plumber | 24/7 Fast Response Plumbing Repair</title>
+  <meta name="description" content="Fast, reliable 24/7 emergency plumbing repair and installation. Same-day service, upfront pricing, licensed technicians serving your area."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #003366;      /* deep trust blue */
+      --accent: #d32f2f;       /* urgency red */
+      --text: #1a1a1a;
+      --light-text: #444;
+      --bg: #ffffff;
+      --light-bg: #f8f9fa;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 700; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Hero */
+    header {
+      position: relative;
+      min-height: 80vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)),
+                  url('https://www.flowpro-plumbing.com/wp-content/uploads/2024/11/Website-Photos-2024-11-07T131507665.jpg') center/cover no-repeat;
+      color: white;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    header h1 {
+      font-size: clamp(3rem, 8vw, 5rem);
+      margin-bottom: 1.2rem;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    }
+    .phone-big {
+      font-size: clamp(2.5rem, 7vw, 4.2rem);
+      font-weight: 700;
+      margin: 1.5rem 0;
+      display: block;
+      background: rgba(255,255,255,0.15);
+      padding: 12px 24px;
+      border-radius: 12px;
+      backdrop-filter: blur(4px);
+    }
+    .phone-big a { color: white; }
+    .sub { font-size: 1.5rem; font-weight: 500; opacity: 0.95; margin-bottom: 2rem; }
+
+    /* Call Button */
+    .call-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 16px 32px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1.2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(211, 47, 47, 0.3);
+      text-decoration: none;
+    }
+    .call-btn:hover {
+      background: #b71c1c;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(211, 47, 47, 0.4);
+    }
+    .call-btn.primary { background: var(--primary); box-shadow: 0 4px 12px rgba(0, 51, 102, 0.3); }
+    .call-btn.primary:hover { background: #001f3f; }
+
+    /* Sections */
+    section { padding: 80px 0; }
+    .content-section { background: var(--light-bg); }
+    h2 {
+      font-size: 2.8rem;
+      text-align: center;
+      margin-bottom: 2.5rem;
+      color: var(--primary);
+    }
+    .highlight { color: var(--accent); font-weight: bold; }
+
+    .img-feature {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      margin: 2rem auto;
+      display: block;
+    }
+
+    ul.benefits {
+      list-style: none;
+      max-width: 720px;
+      margin: 2rem auto;
+      font-size: 1.25rem;
+    }
+    ul.benefits li {
+      margin: 1.4rem 0;
+      padding-left: 2.2rem;
+      position: relative;
+    }
+    ul.benefits li::before {
+      content: "✔";
+      color: var(--accent);
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+
+    .urgency {
+      background: #fff3f3;
+      border-left: 8px solid var(--accent);
+      padding: 35px;
+      margin: 2.5rem auto;
+      max-width: 800px;
+      font-size: 1.25rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .contact-info {
+      text-align: center;
+      font-size: 1.4rem;
+      margin: 3.5rem 0;
+    }
+    .contact-info .phone {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      display: block;
+      margin: 1rem 0;
+    }
+
+    /* Bottom CTA */
+    .bottom-cta {
+      background: linear-gradient(135deg, var(--accent), #b71c1c);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      margin: 0;
+    }
+    .bottom-cta h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+    .bottom-cta p {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      opacity: 0.95;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      header { min-height: 70vh; padding: 60px 15px; }
+      h2 { font-size: 2.4rem; }
+      section { padding: 60px 0; }
+      .phone-big { font-size: 2.8rem; padding: 10px 18px; }
+      .call-btn { padding: 14px 28px; font-size: 1.1rem; width: 100%; max-width: 300px; }
+      .bottom-cta h2 { font-size: 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="hero-content">
+      <h1>Fast, Reliable Plumbing Repair & Install<br>Serving Your City 24/7</h1>
+      <a href="tel:+19199999999" class="phone-big">(919) 999-9999</a>
+      <p class="sub">Same day service • Licensed Technicians • Upfront Pricing</p>
+      <a href="tel:+19199999999" class="call-btn primary">🚨 Call Now for Emergency Service</a>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>Plumbing issues don't fix themselves<br><span class="highlight">WE DO!</span></h2>
+      <p style="font-size:1.25rem; text-align:center; max-width:720px; margin:0 auto 2rem;">
+        Our experienced technicians diagnose the issue fast and fix it right.<br>We get it done the first time, every time!
+      </p>
+      <img src="https://allislandhvac.com/wp-content/uploads/2025/10/man-fixing-kitchen-sink-scaled.jpg" alt="Plumber fixing sink leak" class="img-feature">
+      <ul class="benefits">
+        <li>Fast response—no waiting all day</li>
+        <li>Upfront pricing before work begins</li>
+        <li>Licensed & insured local technicians</li>
+        <li>Fully stocked trucks for same-visit repairs</li>
+      </ul>
+      <div style="text-align:center; margin:2rem 0;">
+        <a href="tel:+19199999999" class="call-btn">📞 Get Your Quote in Minutes</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <h2><span class="highlight">No Job is Too Big!</span></h2>
+      <p style="font-size:1.25rem; text-align:center; max-width:720px; margin:0 auto 2rem;">
+        When a major plumbing emergency hits, you need more than a quick fix.<br>
+        Our licensed team is equipped to manage large-scale problems safely, quickly, and correctly, any time of day or night.
+      </p>
+      <img src="https://www.krullplumbing.com/wp-content/uploads/2023/04/MwYtXXEWYWaGcpou4OOB9aAKN4kw3NM5f01ai9eP-7.jpg" alt="Plumber team with service truck" class="img-feature">
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Trusted in Your City</h2>
+      <ul class="benefits" style="text-align:center; font-size:1.3rem;">
+        <li>5-Star Rated by Homeowners</li>
+        <li>10+ Years Serving the City/State</li>
+        <li>NO Call Centers - Real Live Representatives</li>
+      </ul>
+      <img src="https://www.flowpro-plumbing.com/wp-content/uploads/2024/11/Website-Photos-2024-11-07T131507665.jpg" alt="Professional plumber at work" class="img-feature" style="max-width:700px;">
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <h2>Plumbing Emergencies <span class="highlight">Don't Wait!</span></h2>
+      <div class="urgency">
+        Water damage spreads quickly and repairs become more expensive the longer you delay.<br>
+        If you have an active leak, backup, or loss of water pressure, it is best to act <strong>immediately</strong>.
+      </div>
+      <img src="https://www.marcfrancisplumbing.com/wp-content/uploads/2023/09/BVenINeo7Y8RlBaxkXeZqnmtoN3norLFNIgPdFQE-8.jpg" alt="Flooded home from burst pipe" class="img-feature" style="max-width:800px;">
+      <div style="text-align:center; margin:2rem 0;">
+        <a href="tel:+19199999999" class="call-btn">⚠️ Stop the Damage Now – Call Us!</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="contact-info">
+        <p>Ready to solve your plumbing emergency right now?</p>
+        <p>Call us 24/7:</p>
+        <a href="tel:+19199999999" class="phone">(919) 999-9999</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--light-bg); padding:50px 0; text-align:center;">
+    <div class="container">
+      <p style="font-size:1.2rem;">
+        Company Name<br>
+        1020 Anywhere Lane<br>
+        Stateside, NC 27777
+      </p>
+    </div>
+  </section>
+
+  <!-- Bottom CTA Section -->
+  <section class="bottom-cta">
+    <div class="container">
+      <h2>🚨 Don't Let a Leak Ruin Your Day!</h2>
+      <p>Our team is standing by 24/7 to fix your plumbing emergency fast. One call is all it takes.</p>
+      <a href="tel:+19199999999" class="call-btn" style="background:white; color:var(--accent); font-size:1.3rem; padding:20px 40px;">
+        Call (919) 999-9999 Now
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Company Name. All rights reserved.</p>
+      <p style="margin-top:1rem; font-size:0.9rem; opacity:0.8;">
+        All content on this website, including text, graphics, logos, and layout, is the property of Company Name and is protected by applicable copyright and intellectual property laws. Unauthorized use, reproduction, or distribution of any material from this site without prior written consent is strictly prohibited.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
